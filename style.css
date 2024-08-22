@@ -418,7 +418,7 @@ input[type=submit]:hover {
     }
 }
 
-i{
+#links{
     font-size: 6rem;
     margin: 5rem;
     transition: all 0.4s;
@@ -609,4 +609,69 @@ padding-left: 15%;
 
 /*----------------------------------------About.html------------------------------------------*/
 
+.about-popup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1); 
+    padding: 50px;
+    border-radius: 15px;
+    background-color: var(--background2);
+    width: 80%;
+    max-width: 1000px;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1); 
+    opacity: 1;
+    z-index: 4;
+}
+
+#about-img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+#about-text {
+    text-align: left;
+    font-size: larger;
+    font-weight: 600;
+    padding-left: 40px;
+    flex: 1;
+}
+
+.about-skills {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.skill-icon {
+    width: 100px;
+    margin: 0 10px;
+}
+
+#about-cancel-btn{
+     background-color: transparent;
+     border: none;
+     font-size: xx-large;
+     font-weight: bold;
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     cursor: pointer;
+}
+
+#about-cancel-btn:hover{
+    color: red;
+}
 

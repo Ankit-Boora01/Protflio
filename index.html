@@ -10,7 +10,9 @@
 
 </head>
     <body>
+      
  <div class="home">
+
     <div class="circle logo">  <p>A</p> </div>
 
     <div class="circle menu">  <p>Menu</p> </div>
@@ -18,10 +20,28 @@
         <ul>
             <a id="menu-options" href="#"> <li>Home</li></a>
             <a id="menu-options" href="./Work.html"> <li>Work</li></a>
-            <a id="menu-options" href="./About.html"> <li>About</li></a>
+            <a id="menu-options" > <li onclick="openPopUp()">About</li></a>
             <a id="menu-options" href="#contact"> <li>Contact</li></a>
         </ul>
     </div>
+    <div class="about-popup">
+        <img id="about-img" src="./images/about.jpg" alt="Ankit's Picture">
+        <div id="about-text">
+            <p>
+                I'm Ankit, a passionate front-end developer with a Computer Programming diploma from Sheridan College. My journey in web development has been fueled by a strong curiosity and a drive to create user-friendly and visually appealing applications. I have hands-on experience with HTML, CSS, and JavaScript, and I've built a diverse range of projects including interactive quizzes, weather apps, and dynamic web components.
+            </p>
+            <p>
+                I'm always eager to learn new technologies and take on challenges that push my skills to the next level. Whether it's developing responsive interfaces or solving complex coding problems, I enjoy every step of the creative process. I'm excited to continue growing in this field and contribute to innovative projects that make a difference.
+            </p>
+            <div class="about-skills">
+                <img class="skill-icon" src="./images/icons8-html-5-240.png" alt="HTML Icon">
+                <img class="skill-icon" src="./images/icons8-css3-240.png" alt="CSS Icon">
+                <img class="skill-icon" src="./images/icons8-javascript-144.png" alt="JavaScript Icon">
+                <img class="skill-icon" src="./images/icons8-angularjs-144.png" alt="Angular Icon">
+            </div>
+        </div>
+        <button id="about-cancel-btn" onclick="closePopUp()"><i class="fa-solid fa-xmark"></i></button>
+    </div>  
     
     <br>
     <div class="home-info"> 
@@ -30,14 +50,13 @@
         <p>Passionate front-end developer with a keen eye for design<br>
              and a strong commitment to creating seamless user<br> experiences. 
              Skilled in HTML, CSS, JavaScript, and responsive design.</p>
-             <button class="home-btn"> <p id="btn-value"> More</p></button>
+             <button class="home-btn" onclick="openPopUp()"> <p id="btn-value"> More</p></button>
             </div>
 
         <div class="myimg"><img src="./images/myphoto.png"  width="520" height="800" ></div>
     </div>
    
 </div>
-
 <div class="box"></div>
 <div class="work">
      <div class="work-info" ><h1 style="color:  #CC0014;">Some Experiments by Me.</h1><br>
@@ -80,12 +99,12 @@
 
 <footer>
     <div class="icon">
-    <div class="insta"><i class="fab fa-instagram"></i></div>
-    <div class="likdn"><i class="fab fa-linkedin"></i></div>
-    <div class="mail"><i class="far fa-envelope"></i></div>
+    <div class="insta"><i id="links" class="fab fa-instagram"></i></div>
+    <div class="likdn"><i id="links" class="fab fa-linkedin"></i></div>
+    <div class="mail"><i id="links" class="far fa-envelope"></i></div>
 </div>
     <p>designed By Ankit.</p>
 </footer>
-
+<script src="javaScript.js"></script>
     </body>
 </html>

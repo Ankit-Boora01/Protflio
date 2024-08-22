@@ -18,10 +18,28 @@
                 <ul>
             <a id="menu-options" href="index.html"> <li>Home</li></a>
             <a id="menu-options" href="Work.html"> <li>Work</li></a>
-            <a id="menu-options" href="About.html"> <li>About</li></a>
+            <a id="menu-options" > <li onclick="openPopUp()">About</li></a>
             <a id="menu-options" href="index.html#contact"> <li>Contact</li></a>
                 </ul>
             </div>
+            <div class="about-popup">
+                <img id="about-img" src="./images/about.jpg" alt="Ankit's Picture">
+                <div id="about-text">
+                    <p>
+                        I'm Ankit, a passionate front-end developer with a Computer Programming diploma from Sheridan College. My journey in web development has been fueled by a strong curiosity and a drive to create user-friendly and visually appealing applications. I have hands-on experience with HTML, CSS, and JavaScript, and I've built a diverse range of projects including interactive quizzes, weather apps, and dynamic web components.
+                    </p>
+                    <p>
+                        I'm always eager to learn new technologies and take on challenges that push my skills to the next level. Whether it's developing responsive interfaces or solving complex coding problems, I enjoy every step of the creative process. I'm excited to continue growing in this field and contribute to innovative projects that make a difference.
+                    </p>
+                    <div class="about-skills">
+                        <img class="skill-icon" src="./images/icons8-html-5-240.png" alt="HTML Icon">
+                        <img class="skill-icon" src="./images/icons8-css3-240.png" alt="CSS Icon">
+                        <img class="skill-icon" src="./images/icons8-javascript-144.png" alt="JavaScript Icon">
+                        <img class="skill-icon" src="./images/icons8-angularjs-144.png" alt="Angular Icon">
+                    </div>
+                </div>
+                <button id="about-cancel-btn" onclick="closePopUp()"><i class="fa-solid fa-xmark"></i></button>
+            </div> 
 
             <div class="experience">
                 <div class="e">E</div>
@@ -155,6 +173,6 @@
     </div>
         <p>designed By Ankit.</p>
     </footer>
-
+<script src="javaScript.js"></script>
     </body>
 </html>
